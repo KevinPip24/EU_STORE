@@ -1,0 +1,45 @@
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+header{
+    margin-bottom: 40px;
+    background-color: antiquewhite;
+}
+
+ul li i{
+    margin-left: 20px;
+}
+address{
+    font-style: italic;
+    margin-left: 20px;
+}
+nav{
+    background-color: black;
+ }
+
+ .nav-link, .navbar-brand{
+    color: white;
+ }
+
+ .nav-link:hover, #naavbarNav{
+    color: #ffc312}
+
+    footer{
+        background-color: aliceblue;}
+    
+    .chi-siamo{
+        display: flex;
+        padding-right: 30px;
+    }
+    h2{
+        text-align: center;
+    }
+    .nav-link:active{
+        color: #ffc312;
+    }

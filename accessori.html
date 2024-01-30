@@ -1,0 +1,791 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="sito.css" />
+    <meta name="author" content="Kevin" />
+    <title>Accessori</title>
+
+ 
+
+</head>
+<body>
+
+    <!--Navbar started here-->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid mt-3">
+                <a class="navbar-brand" href="index.html"><img src="img_uomo/Screenshot_2024-01-28_205019-removebg-preview.png" alt="logo" height="40rem" ></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                arial-controls="navbarNav" arial-expand="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-3 nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="uomo.html">Uomo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donna.html">Donna</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="scarpe.html">Scarpe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="accessori.html">Accessori</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="chi_siamo.html">Chi siamo</a>
+                            </li>
+                <li class="cart-logo mt-2">
+                    <a href="http://"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16" style="margin-left: 100px;">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                      </svg></a>
+                </li>
+          </ul>
+        </nav>
+    </header>
+    <div class="bordi">
+        <!--contenitore-->
+        <h1><strong>Accessori Uomo</strong></h1>
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+            <!--1a foto-->
+            <div class="col">
+                <div class="card">
+                    <img src="img_accessori\acc-1.jpg" class="card-img-top" alt="Immagine non Disponibile">
+                    <div class="card-body">
+                        <div class="icons">
+                            <h5 class="card-title">Braccialli</h5>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-comments" aria-hidden="true">1.2k</i>
+                        </div>
+                        <div class="price-b">
+                            <span>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">
+                                    £15
+                                </button>
+                            </span>
+                            <span>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">
+                                    Carrello
+                                </button>
+                            </span>
+                        </div>
+                        <!--modal-->
+                        <div class="container mt-5" id="carr">
+
+                            <!--Creiamo Modal-->
+                            <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Seleziona la Taglia</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img_accessori\acc-1.jpg" class="card-img-top" alt="Immagine non Disponibile">
+                                            <br />
+                                            <br />
+                                            <p id="par">
+                                                Ti presentiamo il nostro braccialetto da uomo, un accessorio che combina
+                                                perfettamente moda e resistenza. Questo straordinario braccialetto presenta un robusto
+                                                nucleo in acciaio inossidabile che garantisce un design distintivo e robusto.
+                                                La chiusura magnetica non solo garantisce una vestibilità comoda, ma aggiunge anche un tocco
+                                                di raffinatezza al bracciale con i suoi accenti in acciaio lucido.
+                                            </p>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Seleziona la Taglia</option>
+                                                <option value="1">Taglia unica</option>
+                                            </select>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                Chiudi
+                                            </button>
+                                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--2a foto-->
+            <div class="col">
+                <div class="card">
+                    <img src="img_accessori\acc-2.jpg" class="card-img-top" alt="Immagine non Disponibile">
+                    <div class="card-body">
+                        <div class="icons">
+                            <h5 class="card-title">Braccialli</h5>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-comments" aria-hidden="true">1.2k</i>
+                        </div>
+                        <div class="price-b">
+                            <span>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">
+                                    £15
+                                </button>
+                            </span>
+                            <span>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">
+                                    Carrello
+                                </button>
+                            </span>
+                        </div>
+                        <!--modal-->
+                        <div class="container mt-5" id="carr">
+                            <!--Creiamo Modal-->
+                            <div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Seleziona la Taglia</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img_accessori\acc-2.jpg" class="card-img-top" alt="Immagine non Disponibile">
+                                            <br />
+                                            <br />
+                                            <p id="par">
+                                                Ti presentiamo il nostro braccialetto da uomo, un accessorio che combina
+                                                perfettamente moda e resistenza. Questo straordinario braccialetto presenta un robusto
+                                                nucleo in acciaio inossidabile che garantisce un design distintivo e robusto.
+                                                La chiusura magnetica non solo garantisce una vestibilità comoda, ma aggiunge anche un tocco
+                                                di raffinatezza al bracciale con i suoi accenti in acciaio lucido.
+                                            </p>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Seleziona la Taglia</option>
+                                                <option value="1">Taglia unica</option>
+                                            </select>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                Chiudi
+                                            </button>
+                                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Add
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--3a foto-->
+            <div class="col">
+                <div class="card">
+                    <img src="img_accessori\acc-3.jpg" class="card-img-top" alt="Immagine non Disponibile">
+                    <div class="card-body">
+                        <div class="icons">
+                            <h5 class="card-title">Braccialli</h5>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-comments" aria-hidden="true">1.2k</i>
+                        </div>
+                        <div class="price-b">
+                            <span>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal3">
+                                    £15
+                                </button>
+                            </span>
+                            <span>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal3">
+                                    Carrello
+                                </button>
+                            </span>
+                        </div>
+                        <!--modal-->
+                        <div class="container mt-5" id="carr">
+                            <!--Creiamo Modal-->
+                            <div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Seleziona la Taglia</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img_accessori\acc-3.jpg" class="card-img-top" alt="Immagine non Disponibile">
+                                            <br />
+                                            <br />
+                                            <p id="par">
+                                                Ti presentiamo il nostro braccialetto da uomo, un accessorio che combina
+                                                perfettamente moda e resistenza. Questo straordinario braccialetto presenta un robusto
+                                                nucleo in acciaio inossidabile che garantisce un design distintivo e robusto.
+                                                La chiusura magnetica non solo garantisce una vestibilità comoda, ma aggiunge anche un tocco
+                                                di raffinatezza al bracciale con i suoi accenti in acciaio lucido.
+                                            </p>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Seleziona la Taglia</option>
+                                                <option value="1">Taglia unica</option>
+                                            </select>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                Chiudi
+                                            </button>
+                                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Add
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1><strong>Accessori Donna</strong></h1>
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+            <!--4a foto-->
+            <div class="col">
+                <div class="card">
+                    <img src="img_accessori\accd-1.jpg" class="card-img-top" alt="Immagine non Disponibile">
+                    <div class="card-body">
+                        <div class="icons">
+                            <h5 class="card-title">Braccialli</h5>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-comments" aria-hidden="true">1.2k</i>
+                        </div>
+                        <div class="price-b">
+                            <span>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal4">
+                                    £15
+                                </button>
+                            </span>
+                            <span>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal4">
+                                    Carrello
+                                </button>
+                            </span>
+                        </div>
+
+                        <!--modal-->
+                        <div class="container mt-5">
+                            <!--Creiamo Modal-->
+                            <div class="modal fade" id="myModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Seleziona la Taglia</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img_accessori\accd-1.jpg" class="card-img-top" alt="Immagine non Disponibile">
+                                            <br />
+                                            <br />
+                                            <p id="par">
+                                                Questa cintura da donna è un accessorio indispensabile per ogni guardaroba.
+                                                Realizzata in pelle di alta qualità, la cintura è resistente e durevole,
+                                                garantendo un uso a lungo termine.
+                                                La cintura presenta una fibbia in metallo lucido che aggiunge
+                                                un tocco di eleganza al design. La fibbia è facile da usare e offre
+                                                una chiusura sicura, garantendo che la cintura rimanga in posizione.
+                                            </p>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Seleziona la Taglia</option>
+                                                <option value="1">S</option>
+                                                <option value="2">M</option>
+                                                <option value="3">L</option>
+                                                <option value="4">XL</option>
+                                            </select>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                Chiudi
+                                            </button>
+                                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Add
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--5a foto-->
+            <div class="col">
+                <div class="card">
+                    <img src="img_accessori\accd-2.jpg" class="card-img-top" alt="Immagine non Disponibile">
+                    <div class="card-body">
+                        <div class="icons">
+                            <h5 class="card-title">Braccialli</h5>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-comments" aria-hidden="true">1.2k</i>
+                        </div>
+                        <div class="price-b">
+                            <span>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal5">
+                                    £15
+                                </button>
+                            </span>
+                            <span>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal5">
+                                    Carrello
+                                </button>
+                            </span>
+                        </div>
+                        <!--modal-->
+                        <div class="container mt-5">
+                            <!--Creiamo Modal-->
+                            <div class="modal fade" id="myModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Seleziona la Taglia</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img_accessori\accd-2.jpg" class="card-img-top" alt="Immagine non Disponibile">
+                                            <br />
+                                            <br />
+                                            <p id="par">
+                                                Questo bracciale da donna è un vero gioiello di raffinatezza e stile. Realizzato con cura
+                                                e attenzione ai dettagli, presenta una serie di charm scintillanti che catturano la luce in modo incantevole.
+                                                Il bracciale è realizzato in argento sterling di alta qualità, garantendo durata e resistenza all’usura.
+                                                I charm sono incastonati con pietre preziose multicolori che aggiungono un tocco di eleganza e vivacità al design.
+                                            </p>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Seleziona la Taglia</option>
+                                                <option value="1">Taglia Unica</option>
+                                            </select>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                Chiudi
+                                            </button>
+                                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Add
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--6a foto-->
+            <div class="col">
+                <div class="card">
+                    <img src="img_accessori\accd-3.jpg" class="card-img-top" alt="Immagine non Disponibile">
+                    <div class="card-body">
+                        <div class="icons">
+                            <h5 class="card-title">Braccialli</h5>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-comments" aria-hidden="true">1.2k</i>
+                        </div>
+                        <div class="price-b">
+                            <span>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal6">
+                                    £15
+                                </button>
+                            </span>
+                            <span>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal6">
+                                    Carrello
+                                </button>
+                            </span>
+                        </div>
+                        <!--modal-->
+                        <div class="container mt-5">
+                            <!--Creiamo Modal-->
+                            <div class="modal fade" id="myModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Seleziona la Taglia</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img_accessori\accd-3.jpg" class="card-img-top" alt="Immagine non Disponibile">
+                                            <br />
+                                            <br />
+                                            <p id="par">
+                                                Questo anello da donna è un simbolo di eleganza e raffinatezza. Realizzato in oro bianco di alta qualità,
+                                                l’anello presenta un design sofisticato che cattura l’attenzione.
+                                                Al centro dell’anello si trova un diamante scintillante, incastonato in modo sicuro per garantire la sua durata.
+                                                Il diamante è tagliato con precisione per massimizzare la sua brillantezza e il suo splendore, rendendo l’anello
+                                                un vero e proprio punto di riferimento.
+                                                L’anello ha un design confortevole e una vestibilità regolabile, rendendolo adatto a qualsiasi dimensione del dito.
+                                            </p>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Seleziona la Taglia</option>
+                                                <option value="1">Taglia Unica</option>
+                                            </select>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                Chiudi
+                                            </button>
+                                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Add
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1><strong>Occhiali</strong></h1>
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+            <!--7a foto-->
+            <div class="col">
+                <div class="card">
+                    <img src="img_accessori\occ-1.jpg" class="card-img-top" alt="Immagine non Disponibile">
+                    <div class="card-body">
+                        <div class="icons">
+                            <h5 class="card-title">Occhiali</h5>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-comments" aria-hidden="true">1.2k</i>
+                        </div>
+                        <div class="price-b">
+                            <span>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal7">
+                                    £15
+                                </button>
+                            </span>
+                            <span>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal7">
+                                    Carrello
+                                </button>
+                            </span>
+                        </div>
+                        <!--modal-->
+                        <div class="container mt-5">
+                            <!--Creiamo Modal-->
+                            <div class="modal fade" id="myModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Seleziona la Taglia</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img_accessori\occ-1.jpg" class="card-img-top" alt="Immagine non Disponibile">
+                                            <br />
+                                            <br />
+                                            <p id="par">
+                                                Questi occhiali sono un accessorio essenziale per chi cerca stile e funzionalità.
+                                                Realizzati con montature di alta qualità e lenti resistenti ai graffi, questi occhiali
+                                                sono progettati per durare.Le montature sono leggere e confortevoli, permettendo di indossare
+                                                gli occhiali per lunghi periodi senza sforzo. Le lenti offrono una protezione UV al 100%, proteggendo
+                                                i tuoi occhi dai dannosi raggi del sole.Il design elegante e moderno di questi occhiali li rende perfetti
+                                                per qualsiasi occasione, sia che tu stia leggendo un libro, lavorando al computer o uscendo con gli amici.
+                                                Sono disponibili in una varietà di colori e stili, così puoi scegliere quello che si adatta meglio al tuo look.
+                                                Questi occhiali non sono solo un accessorio di moda - sono un investimento nella tua salute visiva.
+                                                Aggiungi un tocco di stile al tuo look quotidiano con questi occhiali eleganti.
+                                            </p>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Seleziona la Taglia</option>
+                                                <option value="1">53</option>
+                                                <option value="2">54</option>
+                                                <option value="3">55</option>
+                                                <option value="4">60</option>
+                                            </select>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                Chiudi
+                                            </button>
+                                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Add
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--8a foto-->
+            <div class="col">
+                <div class="card">
+                    <img src="img_accessori\occ-2.jpg" class="card-img-top" alt="Immagine non Disponibile">
+                    <div class="card-body">
+                        <div class="icons">
+                            <h5 class="card-title">Occhiali</h5>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-comments" aria-hidden="true">1.2k</i>
+                        </div>
+                        <div class="price-b">
+                            <span>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal8">
+                                    £15
+                                </button>
+                            </span>
+                            <span>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal8">
+                                    Carrello
+                                </button>
+                            </span>
+                        </div>
+                        <!--modal-->
+                        <div class="container mt-5">
+                            <!--Creiamo Modal-->
+                            <div class="modal fade" id="myModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Seleziona la Taglia</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img_accessori\occ-2.jpg" class="card-img-top" alt="Immagine non Disponibile">
+                                            <br />
+                                            <br />
+                                            <p id="par">
+                                                Questi occhiali sono un accessorio essenziale per chi cerca stile e funzionalità.
+                                                Realizzati con montature di alta qualità e lenti resistenti ai graffi, questi occhiali
+                                                sono progettati per durare.Le montature sono leggere e confortevoli, permettendo di indossare
+                                                gli occhiali per lunghi periodi senza sforzo. Le lenti offrono una protezione UV al 100%, proteggendo
+                                                i tuoi occhi dai dannosi raggi del sole.Il design elegante e moderno di questi occhiali li rende perfetti
+                                                per qualsiasi occasione, sia che tu stia leggendo un libro, lavorando al computer o uscendo con gli amici.
+                                                Sono disponibili in una varietà di colori e stili, così puoi scegliere quello che si adatta meglio al tuo look.
+                                                Questi occhiali non sono solo un accessorio di moda - sono un investimento nella tua salute visiva.
+                                                Aggiungi un tocco di stile al tuo look quotidiano con questi occhiali eleganti.
+                                            </p>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Seleziona la Taglia</option>
+                                                <option value="1">53</option>
+                                                <option value="2">54</option>
+                                                <option value="3">55</option>
+                                                <option value="4">60</option>
+                                            </select>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                Chiudi
+                                            </button>
+                                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Add
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--9a foto-->
+            <div class="col">
+                <div class="card">
+                    <img src="img_accessori\occ-3.jpg" class="card-img-top" alt="Immagine non Disponibile">
+                    <div class="card-body">
+                        <div class="icons">
+                            <h5 class="card-title">Occhiali</h5>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-comments" aria-hidden="true">1.2k</i>
+                        </div>
+                        <div class="price-b">
+                            <span>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal9">
+                                    £15
+                                </button>
+                            </span>
+                            <span>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal9">
+                                    Carrello
+                                </button>
+                            </span>
+                        </div>
+                        <!--modal-->
+                        <div class="container mt-5">
+                            <!--Creiamo Modal-->
+                            <div class="modal fade" id="myModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Seleziona la Taglia</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img_accessori\occ-3.jpg" class="card-img-top" alt="Immagine non Disponibile">
+                                            <br />
+                                            <br />
+                                            <p id="par">
+                                                Questi occhiali sono un accessorio essenziale per chi cerca stile e funzionalità.
+                                                Realizzati con montature di alta qualità e lenti resistenti ai graffi, questi occhiali
+                                                sono progettati per durare.Le montature sono leggere e confortevoli, permettendo di indossare
+                                                gli occhiali per lunghi periodi senza sforzo. Le lenti offrono una protezione UV al 100%, proteggendo
+                                                i tuoi occhi dai dannosi raggi del sole.Il design elegante e moderno di questi occhiali li rende perfetti
+                                                per qualsiasi occasione, sia che tu stia leggendo un libro, lavorando al computer o uscendo con gli amici.
+                                                Sono disponibili in una varietà di colori e stili, così puoi scegliere quello che si adatta meglio al tuo look.
+                                                Questi occhiali non sono solo un accessorio di moda - sono un investimento nella tua salute visiva.
+                                                Aggiungi un tocco di stile al tuo look quotidiano con questi occhiali eleganti.
+                                            </p>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Seleziona la Taglia</option>
+                                                <option value="1">53</option>
+                                                <option value="2">54</option>
+                                                <option value="3">55</option>
+                                                <option value="4">60</option>
+                                            </select>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                Chiudi
+                                            </button>
+                                            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Add
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--div bordi-->
+    </div>
+<!--pagination-->
+<div aria-label="Page navigation example">
+    <ul class="pagination justify-content-end mb-5 mx-5">
+      <li class="page-item">
+        <a class="page-link" href="scarpe.html">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="uomo.html">1</a></li>
+      <li class="page-item"><a class="page-link" href="donna.html">2</a></li>
+      <li class="page-item"><a class="page-link" href="accessori.html">3</a></li>
+      <li class="page-item"><a class="page-link" href="chi_siamo.html">4</a></li>
+      <li class="page-item"><a class="page-link" href="donna.html">5</a></li>
+      <li class="page-item">
+        <a class="page-link" href="donna.html">Next</a>
+      </li>
+    </ul>
+</div>
+</body>
+    <!--Footer started here-->
+    <footer class="py-5 border-top">
+        <div class="row">
+            <div class="col-6 col-md-1 mx-4 mb-">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Uomo</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Donna</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Scarpe</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Accessori</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-1 mx-4 mb-">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Chi siamo</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pantaloni</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Vestiti</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">occhiali</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">T-shirt</a></li>
+                </ul>
+            </div>
+      
+            <div class="col-6 col-md-1 mx-4 mb-">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Newsletter</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Conttati</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Social</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Map</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Address</a></li>
+                </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mx-4 mb-">
+                <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Get informed on new and exciting Outfits from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+      
+        <div class="d-flex flex-column flex-sm-row justify-content-between mx-4 py-4 my-4 border-top">
+            <p>© 2024 Eu Stores, Inc. All rights reserved.</p>
+            <address>Via Roma 123, Italy | Tel: +341726353535637.</address>
+            <ul class="list-unstyled d-flex">
+                <ul class="nav justify-content-center  mb- gap-3">
+                    <li class="nav-item justify-content-end "><a href="#" class="nav-link px-2 text-body-secondary"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                  </ul>
+            </ul>
+        </div>
+      </footer>
+</html>
